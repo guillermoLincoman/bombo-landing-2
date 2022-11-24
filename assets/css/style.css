@@ -107,6 +107,11 @@ body{
   border-radius: 60px;
   margin-left: 2.2rem;
 }
+.arrow-contain-black-2{
+  border: 2px solid rgb(0, 0, 0);
+  padding: 1rem 1.8rem;
+  border-radius: 60px;
+}
 /*===== NAVBAR =====*/
 .navbar-area {
     position: relative;
@@ -376,7 +381,7 @@ body{
 .escena-container{
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 2rem;
   padding: 5rem 0;
 }
 .containBlog{
@@ -390,7 +395,7 @@ body{
 .blog-people-categoria{
     display: flex;
     flex-direction: row;
-    gap: .5rem;
+    gap: 2.2rem;
 }
 
 .blogVertical{
@@ -444,7 +449,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0.5rem 1rem ;
+    padding: 0.5rem  1rem ;
     border-radius: 14px;
 }
 .blog-people-categoria-btn p{
@@ -511,11 +516,13 @@ body{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-top: 2rem;
 }
 .appMobile-info-right{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    margin-top: 2rem;
 }
 .appMobile-info-right p{
     text-align: end;
@@ -528,7 +535,7 @@ body{
 /*-------Start friendLocator----------*/
 .friendLocator-container{
     background-image: url(/assets/images/bg-3.png);
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: row;
@@ -536,6 +543,7 @@ body{
     justify-content: space-between;
     height: 1350px;
     padding: 4rem;
+    background-color: black;
 }
 /*-------End friendLocator----------*/
 /*-------Start Banner----------*/
@@ -592,15 +600,19 @@ footer{
 .footer-left p{
   font-size: 13px;
   text-align: center;
+  color: #ffffff9a;
 }
 .footer-social img{
     width: 20px;
-    margin-right: 5px;
+    margin: 10px;
 }
 .footer-a a{
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.603);
+  color: rgb(255, 255, 255);
   font-size: 10px;
+}
+.footer-a a:hover{
+  color: rgba(255, 249, 249, 0.484);
 }
 /*-------End Banner----------*/
 @media (max-width: 1440px)
@@ -649,7 +661,7 @@ footer{
   }
 
   footer{
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
     
   }
@@ -659,7 +671,7 @@ footer{
     align-items: center;
     justify-content: center;
   }
-  .footer-left p{
+  .footer-right a{
     text-align: center;
   }
   .footer-right{
@@ -673,6 +685,10 @@ footer{
   h1{
     font-size: 40px;
   }
+  .friendLocator-container{
+    background-position-y: -4rem;
+    padding: 4rem;
+}
   .appMobile-iphone{
     display: none;
   }
@@ -682,11 +698,15 @@ footer{
   .containBlog{
     flex-direction: column;
   }
+  .escena-container{
+    gap: .5rem;
+  }
   .escena-blog{
     width: 100%;
   }
   .escena-text{
     width: 100%;
+    margin-left: 2rem;
   }
   .arrowRevert{
     margin-left: 3rem;
@@ -704,7 +724,7 @@ footer{
 @media (max-width: 475px)
 {
   .header-hero-bottom ul li a img {
-    height: 30px;
+    height: 40px;
   }
   .escena-blog {
     width: 100%;
@@ -722,7 +742,7 @@ footer{
     width: 90%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-items: center;
   }
   .appMobile-container-3{
@@ -768,23 +788,20 @@ footer{
   }
   .appMobile-info-right h3{
     margin: 0;
+    font-size: 18px;
   }
   .appMobile-info-right p{
-    width: 40%;
+    width: 80%;
   }
   .appMobile-info-left h3{
     margin: 0;
+    font-size: 18px;
+
   }
   .appMobile-info-left p{
-    width: 40%;
+    width: 80%;
   }
 }
-
-@media (max-width: 425px)
-{
-  
-}
-
 
 .bg-appMobile{
   background-color: #EFEFEF;
